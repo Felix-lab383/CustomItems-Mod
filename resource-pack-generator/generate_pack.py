@@ -8,7 +8,6 @@ import json
 import math
 import os
 import random
-import struct
 import zipfile
 from io import BytesIO
 
@@ -19,13 +18,7 @@ PURPLE_DARK = (60, 10, 90)
 PURPLE_MID = (120, 40, 180)
 PURPLE_LIGHT = (180, 100, 255)
 PURPLE_GLOW = (200, 140, 255)
-PURPLE_FAINT = (160, 100, 220, 80)
-VIOLET = (138, 43, 226)
 GALAXY_DARK = (15, 5, 30)
-GALAXY_MID = (40, 15, 70)
-GALAXY_ACCENT = (100, 50, 160)
-STAR_WHITE = (255, 255, 255)
-STAR_PURPLE = (220, 180, 255)
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "website", "downloads")
 PACK_NAME = "PurpleGalaxy"
@@ -195,11 +188,13 @@ def generate_heart_full():
     # Dark outline
     outline_color = PURPLE_DARK + (255,)
     outline_pixels = [
-        (1, 0), (2, 0), (6, 0), (7, 0),  # top
-        (0, 1), (4, 0), (4, 1),  # middle top
-        (0, 2), (8, 1), (8, 2),  # sides
-        (0, 3),  (8, 3),
+        (1, 0), (2, 0), (6, 0), (7, 0),
+        (0, 1), (4, 0), (4, 1),
+        (0, 2), (8, 1), (8, 2),
+        (0, 3), (8, 3),
     ]
+    for px, py in outline_pixels:
+        img.putpixel((px, py), outline_color)
 
     return img
 
