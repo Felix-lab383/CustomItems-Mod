@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Galaxy - Minecraft Resource Pack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <canvas id="stars-canvas"></canvas>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="pack-icon.png" alt="Purple Galaxy Logo" class="logo-img">
+                <div>
+                    <h1>Purple Galaxy</h1>
+                    <p class="tagline">Minecraft Resource Pack</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#downloads">Download</a>
+                <a href="#gallery">Vorschau</a>
+                <a href="#install">Installation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Tauche ein in eine <span class="gradient-text">violette Galaxie</span></h2>
+                <p>Verwandle dein Minecraft in ein atemberaubendes lila Universum. Jeder Block, jedes Item, jede Textur - alles in wunderschonem Violett.</p>
+                <a href="#downloads" class="cta-button">
+                    <span class="btn-icon">&#11015;</span>
+                    Jetzt herunterladen
+                </a>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">MC Versionen</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">70+</span>
+                        <span class="stat-label">Texturen</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Kostenlos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#128156;</div>
+                    <h3>Lila Herzen</h3>
+                    <p>Die Gesundheitsanzeige erstrahlt in wunderschonem Violett - passend zum Galaxie-Thema.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127756;</div>
+                    <h3>Galaxy Inventar</h3>
+                    <p>Dein Inventar wird zu einem Fenster ins Universum mit Sternen und Nebeln.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#9678;</div>
+                    <h3>Lila Crosshair</h3>
+                    <p>Ein eleganter, runder, durchsichtiger Kreis in sanftem Lila als Fadenkreuz.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#9776;</div>
+                    <h3>Purple Hotbar</h3>
+                    <p>Die Schnellzugriffsleiste in dunklem Violett mit leuchtenden Akzenten.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127775;</div>
+                    <h3>Violetter Himmel</h3>
+                    <p>OptiFine-kompatible Himmeltexturen verwandeln die Welt in ein lila Paradies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128302;</div>
+                    <h3>Lila Items</h3>
+                    <p>Alle Werkzeuge, Waffen, Essen und mehr - komplett in Violett umgestaltet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2 class="section-title">Vorschau</h2>
+            <div class="gallery-grid">
+                <div class="preview-card">
+                    <div class="preview-canvas" id="preview-hearts">
+                        <div class="preview-label">Lila Herzen</div>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-canvas" id="preview-hotbar">
+                        <div class="preview-label">Purple Hotbar</div>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-canvas" id="preview-inventory">
+                        <div class="preview-label">Galaxy Inventar</div>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-canvas" id="preview-crosshair">
+                        <div class="preview-label">Lila Crosshair</div>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-canvas" id="preview-items">
+                        <div class="preview-label">Lila Items</div>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-canvas" id="preview-sky">
+                        <div class="preview-label">Violetter Himmel</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="downloads" class="downloads">
+            <h2 class="section-title">Download</h2>
+            <p class="section-subtitle">Wahle deine Minecraft Java Edition Version:</p>
+
+            <div class="version-grid">
+                <div class="version-card featured">
+                    <div class="version-badge">Neueste</div>
+                    <h3>1.21.2 - 1.21.4</h3>
+                    <p>Pack Format 42</p>
+                    <a href="downloads/PurpleGalaxy_1_21_2_1_21_4.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~122 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.21 - 1.21.1</h3>
+                    <p>Pack Format 34</p>
+                    <a href="downloads/PurpleGalaxy_1_21_1_21_1.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~122 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.20.5 - 1.20.6</h3>
+                    <p>Pack Format 32</p>
+                    <a href="downloads/PurpleGalaxy_1_20_5_1_20_6.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~122 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.20.2 - 1.20.4</h3>
+                    <p>Pack Format 18</p>
+                    <a href="downloads/PurpleGalaxy_1_20_2_1_20_4.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~122 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.20 - 1.20.1</h3>
+                    <p>Pack Format 15</p>
+                    <a href="downloads/PurpleGalaxy_1_20_1_20_1.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~120 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.19.x</h3>
+                    <p>Pack Format 13</p>
+                    <a href="downloads/PurpleGalaxy_1_19_x.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~120 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.18.x</h3>
+                    <p>Pack Format 9</p>
+                    <a href="downloads/PurpleGalaxy_1_18_x.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~120 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.17.x</h3>
+                    <p>Pack Format 7</p>
+                    <a href="downloads/PurpleGalaxy_1_17_x.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~120 KB</span>
+                </div>
+
+                <div class="version-card">
+                    <h3>1.16.x</h3>
+                    <p>Pack Format 6</p>
+                    <a href="downloads/PurpleGalaxy_1_16_x.zip" class="download-btn" download>
+                        <span>&#11015;</span> Download ZIP
+                    </a>
+                    <span class="file-size">~120 KB</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="install" class="installation">
+            <h2 class="section-title">Installation</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>ZIP herunterladen</h3>
+                        <p>Lade die passende Version fur dein Minecraft herunter.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Resource Pack Ordner offnen</h3>
+                        <p>Offne Minecraft &rarr; Optionen &rarr; Ressourcenpakete &rarr; "Paketordner offnen"</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>ZIP Datei einfugen</h3>
+                        <p>Kopiere die heruntergeladene ZIP-Datei in den geoffneten Ordner.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Aktivieren & Spielen!</h3>
+                        <p>Wahle "Purple Galaxy" in der Ressourcenpaket-Liste aus und klicke auf "Fertig".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="optifine-note">
+                <strong>&#9888; Hinweis:</strong> Fur den violetten Himmel wird <a href="https://optifine.net" target="_blank" rel="noopener">OptiFine</a> oder ein kompatibler Mod benotigt.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Purple Galaxy Resource Pack</p>
+            <p class="disclaimer">Nicht mit Mojang/Microsoft verbunden. Minecraft ist eine Marke von Mojang Studios.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
