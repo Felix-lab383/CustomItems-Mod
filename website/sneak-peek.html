@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneak Peek - Telo Client</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/telo-logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="images/telo-logo.png" alt="Telo Client Logo">
+        <span>Telo Client</span>
+      </a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sneak-peek.html" class="active">Sneak Peek</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Sneak Peek</h2>
+        <p>Ein exklusiver Einblick in die Telo Client Cape-Kollektion</p>
+      </div>
+
+      <!-- Cape Stats -->
+      <div class="cape-info-grid">
+        <div class="cape-info-card">
+          <div class="number">18+</div>
+          <div class="label">Custom Capes</div>
+        </div>
+        <div class="cape-info-card">
+          <div class="number">6</div>
+          <div class="label">Kategorien</div>
+        </div>
+        <div class="cape-info-card">
+          <div class="number">1,000</div>
+          <div class="label">Coins pro Cape</div>
+        </div>
+        <div class="cape-info-card">
+          <div class="number">&#x221E;</div>
+          <div class="label">Moglichkeiten</div>
+        </div>
+      </div>
+
+      <!-- Preview Image -->
+      <div class="preview-container" style="margin-top: 3rem;">
+        <img src="images/capes-preview.png" alt="Telo Client Capes Preview" class="preview-image">
+      </div>
+
+      <!-- Categories -->
+      <div style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>Kategorien</h2>
+          <p>Alles was du dir vorstellen kannst - und mehr</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Capes</h3>
+            <p>Klassische Capes in verschiedenen Designs und Farben fur jeden Geschmack.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3>Animated Capes</h3>
+            <p>Dynamische, animierte Capes die sich im Wind bewegen und leuchten.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🦋</div>
+            <h3>Wings</h3>
+            <p>Von Engelsflugeln bis Drachenflugeln - fliege mit Stil.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎭</div>
+            <h3>Bandanas</h3>
+            <p>Coole Bandanas fur den perfekten Street-Look in Minecraft.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🐱</div>
+            <h3>Tails</h3>
+            <p>Schwanze in allen Varianten - von Katzenschwanz bis Drachenschwanz.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💃</div>
+            <h3>Emotes & Pets</h3>
+            <p>Drucke dich mit Emotes aus und nimm dein Haustier mit auf Abenteuer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/telo-logo.png" alt="Telo Client">
+        <span>Telo Client</span>
+      </div>
+      <p>&copy; 2025 Telo Client. Alle Rechte vorbehalten.</p>
+      <p class="credits">Programmiert von <span>Felix</span></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

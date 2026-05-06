@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Telo Client</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/telo-logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="images/telo-logo.png" alt="Telo Client Logo">
+        <span>Telo Client</span>
+      </a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sneak-peek.html">Sneak Peek</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Kontakt</h2>
+        <p>Hast du Fragen oder Feedback? Schreib uns!</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon">👨‍💻</div>
+            <div>
+              <h4>Entwickler</h4>
+              <p>Felix</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">🎮</div>
+            <div>
+              <h4>Projekt</h4>
+              <p>Telo Client - Minecraft Launcher</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">🌐</div>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/Felix-lab383" style="color: var(--accent-purple); text-decoration: none;">github.com/Felix-lab383</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">📧</div>
+            <div>
+              <h4>E-Mail</h4>
+              <p>felixoberhausen.21@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- About Card -->
+          <div class="feature-card" style="margin-top: 1rem;">
+            <div class="feature-icon">💜</div>
+            <h3>Uber Telo Client</h3>
+            <p>Telo Client ist ein Custom Minecraft Launcher, der deinem Spielerlebnis eine ganz neue Dimension verleiht. Mit Custom Capes, Wings, Emotes, Pets und vielem mehr macht Minecraft noch mehr Spass.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.3rem;">Nachricht senden</h3>
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Dein Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Betreff</label>
+              <input type="text" id="subject" name="subject" placeholder="Worum geht's?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" placeholder="Deine Nachricht..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Nachricht senden</button>
+          </form>
+          <p id="formStatus" style="margin-top: 1rem; text-align: center; color: var(--accent-green); display: none;"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/telo-logo.png" alt="Telo Client">
+        <span>Telo Client</span>
+      </div>
+      <p>&copy; 2025 Telo Client. Alle Rechte vorbehalten.</p>
+      <p class="credits">Programmiert von <span>Felix</span></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Danke fur deine Nachricht! Wir melden uns bald bei dir.';
+      status.style.display = 'block';
+      e.target.reset();
+      setTimeout(() => {
+        status.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+
+</body>
+</html>
