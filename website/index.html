@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telo Client - Minecraft Launcher</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/telo-logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="images/telo-logo.png" alt="Telo Client Logo">
+        <span>Telo Client</span>
+      </a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="sneak-peek.html">Sneak Peek</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/telo-logo.png" alt="Telo Client Logo" class="hero-logo">
+      <h1>Telo Client</h1>
+      <p class="subtitle">
+        Der ultimative Minecraft Launcher. Custom Capes, Animated Capes, Wings, Bandanas, Tails, Emotes, Pets und vieles mehr.
+      </p>
+      <div class="hero-buttons">
+        <a href="sneak-peek.html" class="btn btn-primary">Sneak Peek</a>
+        <a href="contact.html" class="btn btn-outline">Kontakt</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Features</h2>
+        <p>Entdecke was Telo Client alles zu bieten hat</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Custom Capes</h3>
+          <p>Wahle aus einer riesigen Auswahl an einzigartigen Capes, die deinen Charakter individuell machen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Animated Capes</h3>
+          <p>Animierte Capes, die sich bewegen und deinem Charakter Leben einhauchen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🦋</div>
+          <h3>Wings</h3>
+          <p>Coole Flugel-Designs, die deinem Spieler einen epischen Look verleihen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎭</div>
+          <h3>Bandanas & Tails</h3>
+          <p>Accessoires wie Bandanas und Schwanze fur noch mehr Individualisierung.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💃</div>
+          <h3>Emotes</h3>
+          <p>Drucke dich mit coolen Emotes und Animationen im Spiel aus.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🐾</div>
+          <h3>Pets</h3>
+          <p>Haustiere, die dir uberall hin folgen und deinem Abenteuer Gesellschaft leisten.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/telo-logo.png" alt="Telo Client">
+        <span>Telo Client</span>
+      </div>
+      <p>&copy; 2025 Telo Client. Alle Rechte vorbehalten.</p>
+      <p class="credits">Programmiert von <span>Felix</span></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
